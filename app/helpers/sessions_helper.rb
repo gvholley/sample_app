@@ -4,9 +4,9 @@ module SessionsHelper
   end
 
   def remember(user)
-    User.remember
-    cookies.permanent.encrypted[:user_id] = User.id
-    cookies.permanent[:remember_token] = User.remember_token
+    user.remember
+    cookies.permanent.encrypted[:user_id] = user.id
+    cookies.permanent[:remember_token] = user.remember_token
   end
 
   def current_user
@@ -26,7 +26,7 @@ module SessionsHelper
   end
 
   def forget(user)
-    User.forget
+    user.forget
     cookies.delete(:user_id)
     cookies.delete(:remember_token)
   end
