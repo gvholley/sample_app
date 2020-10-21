@@ -5,11 +5,7 @@
   </div>
   <%= f.submit "Post", class: "btn btn-primary" %>
   <span class="image">
-    <%= simple_form_for(@micropost) do |f| %>
-  <!-- [...] -->
-  <%= f.input :photo, as: :file %>
-  <!-- [...] -->
-<% end %>
+    <%= f.file_field :image, accept: "image/jpeg,image/gif,image/png" %>
   </span>
 <% end %>
 

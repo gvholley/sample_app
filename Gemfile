@@ -24,7 +24,7 @@ gem 'database_cleaner', '~> 1.8', '>= 1.8.5'
 gem 'active_storage_validations', '~> 0.1'
 gem "image_processing", "~> 1.0"
 gem "mini_magick"
-gem 'cloudinary', '~> 1.16.0'
+gem 'aws-sdk-s3', '1.46.0', require: false
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
