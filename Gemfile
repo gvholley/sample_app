@@ -18,8 +18,8 @@ gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
 gem 'faker', '~> 1.6', '>= 1.6.6'
-gem 'will_paginate', '~> 3.1', '>= 3.1.6'
-gem 'bootstrap-will_paginate', '~> 1.0'
+
+gem 'will_paginate-bootstrap'
 gem 'database_cleaner', '~> 1.8', '>= 1.8.5'
 gem 'active_storage_validations', '~> 0.1'
 gem "image_processing", "~> 1.0"
