@@ -1,7 +1,12 @@
 <% provide(:title, 'All users') %>
 <h1>All users</h1>
 
-<%= will_paginate %>
+<div class="digg_pagination">
+  <div class="page_info">
+<%= will_paginate @feed_items, :previous_label => '<',:next_label => '>',
+                  params: { controller: :users, action: :index } %>
+  </div>
+</div>
 
 <ul class="users">
   <% @users.each do |user| %>
@@ -9,6 +14,11 @@
   <% end %>
 </ul>
 
-<%= will_paginate %>
+<div class="digg_pagination">
+  <div class="page_info">
+<%= will_paginate @feed_items, :previous_label => '<',:next_label => '>',
+                  params: { controller: :users, action: :index } %>
+  </div>
+</div>
 
 
