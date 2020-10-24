@@ -24,6 +24,12 @@ $yellow: #ECA72C;
 $orange: #EE5622;
 $off-white: #f5f5f5;
 
+//Pages
+  body {
+    color: $off-white;
+    background-color: $midnight;
+  }
+
 section {
   overflow: auto;
 
@@ -39,14 +45,6 @@ h1 {
   }
 }
 
-.navbar-nav a {
-    color: #555;
-    text-decoration: none;
-    background-color: transparent;
-  &:hover {
-    color: #222;
-}
-}
 
 /* typography */
 
@@ -163,15 +161,15 @@ aside {
 a {
   float: left;
   padding: 0 10px;
-  border-left: 1px solid $light-gray;
-  color: gray;
+  border-left: 1px solid $off-white;
+  color: $off-white;
   &:first-child {
     padding-left: 0;
     border: 0;
   }
   &:hover {
     text-decoration: none;
-    color: blue;
+    color: $orange;
   }
 }
 strong {
@@ -308,11 +306,18 @@ input {
     margin-top: 5px;
   }
 
-  body {
-    color: $off-white;
-    background-color: $midnight;
-  }
 
+
+//Navbar
+
+.navbar-nav a {
+    color: #555;
+    text-decoration: none;
+    background-color: transparent;
+  &:hover {
+    color: #222;
+}
+}
   .navbar {
     background-color: $dark-purple;
   }
@@ -345,8 +350,13 @@ input {
   background-color: $orange;
   border-color: $orange;
   &:hover {
+    color: $off-white;
     background-color: $dark-purple;
   }
+}
+
+.unfollowButton {
+  margin-top: 10px;
 }
 
 //Footer
@@ -359,6 +369,66 @@ footer {
     }
   }
 }
+
+//Microposts
+
+.microposts a {
+  color: $orange;
+  text-decoration: none;
+}
+
+//Pagination
+.digg_pagination {
+  background: $midnight;
+ }
+  .digg_pagination a, .digg_pagination span, .digg_pagination em {
+    padding: 0.2em 0.5em;
+    display: block;
+    float: left;
+    margin-right: 1px; }
+  .digg_pagination .disabled {
+    color: $midnight;
+    border: 1px solid $orange; }
+  .digg_pagination .current {
+    font-style: normal;
+    font-weight: bold;
+    background: $orange;
+    color: white;
+    border: 1px solid $orange; }
+  .digg_pagination a {
+    text-decoration: none;
+    color: $off-white;
+    border: 1px solid $off-white; }
+    .digg_pagination a:hover, .digg_pagination a:focus {
+      color: $orange;
+      border-color: $orange; }
+  .digg_pagination .page_info {
+    background: $midnight;
+    color: $off-white;
+    padding: 0.4em 0.6em;
+    width: 22em;
+    margin-bottom: 0.3em;
+    text-align: center; }
+    .digg_pagination .page_info b {
+      color: $orange;
+      background: $midnight;
+      padding: 0.1em 0.25em; }
+  .digg_pagination:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+  * html .digg_pagination {
+    height: 1%; }
+  *:first-child + html .digg_pagination {
+    overflow: hidden; }
+
+/* About */
+  .about a{
+    color: $orange;
+    text-decoration: none;
+  }
 
 
 
