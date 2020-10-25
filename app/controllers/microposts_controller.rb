@@ -20,6 +20,19 @@ class MicropostsController < ApplicationController
     redirect_to request.referrer || root_url
   end
 
+  def like
+    @micropost = Micropost.find(params[:id])
+    @micropost.liked_by current_user
+    redirect_to '/'
+  end
+
+  def dislike
+    @micropost = Micropost.find(params[:id])
+    @micropost.disliked_by current_user
+    redirect_to '/'
+  end
+
+
   private
 
   def micropost_params

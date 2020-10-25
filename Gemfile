@@ -25,6 +25,7 @@ gem 'active_storage_validations', '~> 0.1'
 gem "image_processing", "~> 1.0"
 gem "mini_magick"
 gem 'aws-sdk-s3', '1.46.0', require: false
+gem 'acts_as_votable', '~> 0.11.1'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password

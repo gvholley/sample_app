@@ -61,6 +61,10 @@ class UsersController < ApplicationController
     render 'show_follow'
   end
 
+  def favorites
+    @micropost = current_user.find_up_voted_items
+  end
+
   private
 
     def user_params
