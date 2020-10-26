@@ -68,6 +68,13 @@ class UsersController < ApplicationController
     render 'show_favorites'
   end
 
+  def reposts
+    @title = "Reposts"
+    @user = User.find(params[:id])
+    @reposts = @user.reposts
+    render 'show_reposts'
+  end
+
   private
 
     def user_params

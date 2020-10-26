@@ -1,5 +1,9 @@
   <li>
+    <% if user.avatar.attached? %>
+    <%= image_tag user.avatar.variant(resize_to_limit: [80, 80]) %>
+    <% else %>
     <%= gravatar_for user, size: 50 %>
+    <% end %>
     <%= link_to user.name, user %>
     <% if current_user.admin? && !current_user?(user) %>
     | <%= link_to "Delete", user, method: :delete, data: { confirm: "Are you sure?" } %>
