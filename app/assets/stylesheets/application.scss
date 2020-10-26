@@ -190,6 +190,10 @@ strong {
 
 .users.follow {
   padding: 0;
+  a {
+    color: $orange;
+    text-decoration: none;
+  }
 }
 
 /* forms */
