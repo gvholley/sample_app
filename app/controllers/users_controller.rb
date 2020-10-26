@@ -62,7 +62,10 @@ class UsersController < ApplicationController
   end
 
   def favorites
-    @micropost = current_user.find_up_voted_items
+    @title = "Favorites"
+    @user = User.find(params[:id])
+    @favorites = @user.find_up_voted_items
+    render 'show_favorites'
   end
 
   private
