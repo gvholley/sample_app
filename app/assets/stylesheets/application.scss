@@ -118,6 +118,7 @@ ul {
   @include box_sizing;
 }
 
+
 /* sidebar */
 aside {
   section.user_info {
@@ -256,9 +257,14 @@ input {
 .microposts {
   list-style: none;
   padding: 0;
+ a {
+  color: $orange;
+  text-decoration: none;
+  margin-left: 5px;
+    }
   li {
-    padding: 10px 0;
-    border-top: 1px solid #e8e8e8;
+    padding-bottom: 13px;
+    border-top: 1px solid $off-white;
   }
   .user {
     margin-top: 5em;
@@ -266,7 +272,7 @@ input {
   }
   .content {
     display: block;
-    margin-left: 60px;
+    margin-left: 100px;
     img {
       display: block;
       padding: 5px 0;
@@ -275,7 +281,7 @@ input {
   .timestamp {
     color: gray;
     display: block;
-    margin-left: 60px;
+    margin-left: 100px;
   }
   .gravatar {
     float: left;
@@ -318,6 +324,7 @@ input {
     color: #555;
     text-decoration: none;
     background-color: transparent;
+    margin-right: 10px;
   &:hover {
     color: #222;
 }
@@ -356,6 +363,7 @@ input {
   &:hover {
     color: $off-white;
     background-color: $dark-purple;
+    border-color: $orange;
   }
 }
 
@@ -374,12 +382,6 @@ footer {
   }
 }
 
-//Microposts
-
-.microposts a {
-  color: $orange;
-  text-decoration: none;
-}
 
 //Pagination
 .digg_pagination {
@@ -434,5 +436,23 @@ footer {
     text-decoration: none;
   }
 
+.jumbotron {
+  background-color: #221e22;
+}
+
+.header-image {
+width: 100%;
+height: auto;
+position: relative
+}
+
+.signbtn {
+  position: absolute;
+  height: 100px;
+  left: 49%;
+  margin-left: -50px;
+  top: 65%;
+  margin-top: -50px;
+}
 
 
