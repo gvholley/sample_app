@@ -7,7 +7,7 @@ User.create!(name:  "Scary Steph",
              activated:    true,
              activated_at: Time.zone.now)
 49.times do |n|
-  name  = Faker::Games::WarhammerFantasy.hero
+  name  = Faker::TvShows::Stargate.character
   email = "example-#{n+1}@railstutorial.org"
   password = "password"
   User.create!(name:  name,
